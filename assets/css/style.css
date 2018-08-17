@@ -1,0 +1,78 @@
+.back {
+    background-color: orange;
+    background-image: url("../images/nflfootballfield.jpg");
+    
+}
+.container {
+    text-align: center;
+}
+.wrapper {
+    position: center;
+    background-color: black;
+    opacity: 0.6;
+    max-width: 960px;
+    min-height: 600px;
+    max-height: 1150px;
+    margin: 60px 200px;
+}
+
+h1{
+    font-family: 'Monoton', monospace;
+    font-size: 60px;
+    color: green;
+}
+h3 {
+    font-family: 'Monoton', monospace;
+    font-size: 40px;
+    color: yellow;
+}
+h4 {
+    color: red;
+}
+h5 {
+    color: yellow;
+}
+h6 {
+    color:yellow;
+}
+h2{
+    font-family: 'Monoton', monospace;
+    font-size: 50px;
+    color: yellow;
+}
+
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: red;
+}
+
+
+#currentWord {
+    color: yellow;
+
+}
+
+.gameplay-column {
+    padding-top: 20px;
+    /* border: 3px dashed #fff; */
+    text-align: center;
+    margin-top: 20px;
+    min-height: 500px;
+    /* background-color: rgba(255, 255, 255, .3); */
+}
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+
+.clearfix:after {
+clear: both;
+}
+
+
+.clearfix {
+*zoom: 1;
+} 

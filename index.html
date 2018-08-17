@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hang Man</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body class="back">
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="row one">
+                <div class="col-md-12">
+                    <h1>Hang-Man</h1>
+                    <h2>NFL-Football-Teams</h2>
+                    <h3>Press Any Key to Get Started! </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row two">
+                <div class="col-md-6 gameplay-column1">
+                    <p id="youwin"></p>
+                    <p id="gameover"></p>
+                    <p id="continue"></p>
+                </div>
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h4>Wins</h4>
+                <h5 id="totalWins"></h5>
+                <h4>losses</h4>
+                <h5 id="totallosses"></h5>
+                <h4>Current Word</h4>
+                <h3 id="currentWord"></h3>
+                <h4>Guesses Remaining</h4>
+                <h6 id="remainingGuesses"></h6>
+                <h4>Letters Guessed</h4>
+                <h3 id="guessedLetters"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+
+
+
+</body>
+
+</html>
