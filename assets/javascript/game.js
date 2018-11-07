@@ -60,7 +60,7 @@ function updateDisplay() {
 
     if (remainingGuesses <= 0) {
 
-        document.getElementById("gameover").innerHTML = "You have no more Guesses :(";
+        document.getElementById("gameover").innerHTML = "You have no more Guesses " + '<i class="fas fa-sad-tear fa-2x tear"></i>';
         document.getElementById("continue").innerHTML = "Press any Key to Continue";
         losses++;
         hasFinished = true;
@@ -126,10 +126,17 @@ function evaluateGuess(letter) {
 
 function checkWin() {
     if (guessingWord.indexOf("_") === -1) {
-        document.getElementById("youwin").innerHTML = "You Winnn!!!";
+        document.getElementById("youwin").innerHTML = "You Winnn!!! " + '<i class="fas fa-smile-wink fa-2x wink"></i>';
         document.getElementById("continue").innerHTML = "Press any Key to Continue";
         wins++;
         hasFinished = true;
     }
 };
-
+// function myFunction() {
+//     var x = document.getElementById("myDIV");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
