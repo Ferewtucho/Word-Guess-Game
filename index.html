@@ -56,7 +56,6 @@
           <p>
             When you loss all the lives, the game is over and you can try again.
           </p>
-          <h5 id="continue" class="pulsate2"></h5>
         </div>
         <div class="col-md-1"></div>
         <div
@@ -76,8 +75,8 @@
             <hr />
           </div>
           <hr />
-          <p id="youwin"></p>
-          <p id="gameover"></p>
+          <p id="youwin" class="pulsate2"></p>
+          <p id="gameover" class="pulsate2" style="color: red !important"></p>
 
           <hr />
           <h4>Current Word</h4>
@@ -87,10 +86,15 @@
           <h4>Letters Guessed</h4>
           <hr />
           <h3 id="guessedLetters"></h3>
+          <hr />
+          <h5 id="continue" class="pulsate2"></h5>
         </div>
       </div>
     </div>
 
-    <script></script>
+    <script type="text/javascript">
+      updateDisplay();
+      resetGame();
+    </script>
   </body>
 </html>

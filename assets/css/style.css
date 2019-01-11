@@ -1,18 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
 
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: black url(../images/eagles.png) center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
 body {
   background-image: url(../images/eagles.png);
   background-repeat: no-repeat;
@@ -27,11 +14,11 @@ body {
   opacity: 0;
 }
 p {
-  color: antiquewhite;
+  color: #000000;
 }
 .myelement {
-  background: rgba(14, 0, 0, 0.5) !important;
-  -pie-background: rgba(14, 0, 0, 0.5) !important;
+  background: rgba(4, 106, 56, 0.8) !important;
+  -pie-background: rgba(4, 106, 56, 0.8) !important;
   behavior: url(PIE.htc);
 }
 
@@ -95,7 +82,7 @@ h4 {
 .container {
   margin-top: 40px;
   text-align: center;
-  color: antiquewhite;
+  color: #000000;
 }
 .right {
   text-align: right !important;
