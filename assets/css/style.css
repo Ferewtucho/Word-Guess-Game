@@ -1,76 +1,103 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
+/* html,
 body {
-    font-family: 'Merriweather', serif !important;
-    background-image: url("../images/hence-the-boom-465963-unsplash.jpg");
-    color: antiquewhite;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black url(../images/eagles.png) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+body {
+  background-image: url(../images/eagles.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .pulsate {
-    animation: pulsate 2s ease-out;
-    animation-iteration-count: infinite; 
-    opacity: 0.0;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
 }
 p {
-    color: antiquewhite;
+  color: antiquewhite;
 }
 .color {
-    color: antiquewhite;
+  color: antiquewhite;
 }
 .myelement {
-    background: rgba(14, 0, 0, 0.5) !important;
-    -pie-background:  rgba(14, 0, 0, 0.5) !important;
-    behavior: url(PIE.htc);
+  background: rgba(14, 0, 0, 0.5) !important;
+  -pie-background: rgba(14, 0, 0, 0.5) !important;
+  behavior: url(PIE.htc);
 }
 
 @-webkit-keyframes pulsate {
-    0% {opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {opacity: 0.0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .pulsate2 {
-    text-align: center;
-    text-shadow: 1px 1px 2px black, 0 0 25px antiquewhite, 0 0 5px whitesmoke;
-    animation: pulsate 1s ease-out;
-    animation-iteration-count: infinite; 
-    opacity: 0.0;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px antiquewhite, 0 0 5px whitesmoke;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
 }
 @-webkit-keyframes pulsate {
-    0% {opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {opacity: 0.0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .tear {
-    color:#ffcb2e;
+  color: #ffcb2e;
 }
 
 .wink {
-    color:#ffcb2e;
+  color: #ffcb2e;
 }
 
-.h4, h4 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+.h4,
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 .top {
-    margin-top: 20px;
-    background-color: green;
-    padding: 10px;
-    border-radius: 3px;
+  margin-top: 20px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 3px;
 }
 .top1 {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 .container {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .center {
-    text-align: center !important;
-    color: antiquewhite;
+  text-align: center !important;
+  color: antiquewhite;
 }
 .right {
-    text-align: right !important;
-    border-radius: 3px;
-    position: relative;
-    right: 0 !important;
+  text-align: right !important;
+  border-radius: 3px;
+  position: relative;
+  right: 0 !important;
 }
