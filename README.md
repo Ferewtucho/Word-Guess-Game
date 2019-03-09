@@ -1,4 +1,4 @@
-# Word-Guess-Game (Football)
+# Word-Guess-Game (NFL)
 
 <img src= "./assets/img/back-ground.jpg" width = "500" height ="300" alt = "eagles">
 <hr>
