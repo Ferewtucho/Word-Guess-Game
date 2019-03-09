@@ -1,6 +1,6 @@
 # Word-Guess-Game (Football)
 
-<img src= "./assets/images/eagles1.png" alt = "eagles">
+<img src= "./assets/images/back-ground.jpg" alt = "eagles">
 <hr>
 <h3>Project Description</h3>
 
