@@ -1,5 +1,3 @@
-// Word list
-
 var champWords = [
   "eagles",
   "steelers",
@@ -12,7 +10,7 @@ var champWords = [
   "colts"
 ];
 
-const maxTries = 10; // Maximum number of tries player has
+const maxTries = 7; // Maximum number of tries player has
 
 var guessedLetters = []; // Stores the letters the user guessed
 var currentWordIndex; // Index of the current word in the array
@@ -40,9 +38,8 @@ function resetGame() {
     guessingWord.push("_");
   }
   // Hide game over, win text, and to continue
-  document.getElementById("gameover").innerHTML = " ";
-  document.getElementById("youwin").innerHTML = " ";
-  document.getElementById("continue").innerHTML = " ";
+  document.querySelector(".continue").innerHTML = " ";
+  document.querySelector(".gameover").innerHTML = " Fly!! Eagles";
 
   // Show display
   updateDisplay();
@@ -50,24 +47,26 @@ function resetGame() {
 
 //  Updates the display on the HTML Page
 function updateDisplay() {
-  document.getElementById("totalWins").innerText = wins;
+  document.querySelector(".win").innerText = wins;
 
-  document.getElementById("totallosses").innerText = losses;
+  document.querySelector(".loose").innerText = losses;
 
-  document.getElementById("currentWord").innerText = " ";
+  document.querySelector(".image").src =
+    "assets/img/hangman-" + remainingGuesses + ".png";
+
+  document.querySelector(".currentWord").innerText = " ";
 
   for (var i = 0; i < guessingWord.length; i++) {
-    document.getElementById("currentWord").innerText += guessingWord[i];
+    document.querySelector(".currentWord").innerText += guessingWord[i];
   }
-  document.getElementById("remainingGuesses").innerText = remainingGuesses;
 
-  document.getElementById("guessedLetters").innerText = guessedLetters;
+  document.querySelector(".lives").innerText = remainingGuesses;
+
+  document.querySelector(".guessedLetters").innerText = guessedLetters;
 
   if (remainingGuesses <= 0) {
-    document.getElementById("gameover").innerHTML =
-      "You have no more Guesses " +
-      '<i class="fas fa-sad-tear fa-2x tear"></i>';
-    document.getElementById("continue").innerHTML = "Press any Key to Continue";
+    document.querySelector(".gameover").innerHTML = "You Loose ";
+    document.querySelector(".continue").innerHTML = "Press any Key to Continue";
     losses++;
     hasFinished = true;
   }
@@ -129,18 +128,31 @@ function evaluateGuess(letter) {
 
 function checkWin() {
   if (guessingWord.indexOf("_") === -1) {
-    document.getElementById("youwin").innerHTML =
-      "You Winnn!!! " + '<i class="fas fa-smile-wink fa-2x wink"></i>';
-    document.getElementById("continue").innerHTML = "Press any Key to Continue";
+    document.querySelector(".gameover").innerHTML = "You Win! ";
+    document.querySelector(".continue").innerHTML = "Press any Key to Continue";
     wins++;
     hasFinished = true;
   }
 }
-// function myFunction() {
-//     var x = document.getElementById("myDIV");
-//     if (x.style.display === "none") {
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
+
+document.querySelector(".button__new").addEventListener("click", resetGame);
+
+// function newGame() {
+//   remainingGuesses = maxTries;
+//   gameStarted = false;
+
+//   // Use Math.floor to round the random number down to the nearest whole.
+//   currentWordIndex = Math.floor(Math.random() * champWords.length);
+
+//   // Clear out arrays
+//   guessedLetters = [];
+//   guessingWord = [];
+
+//   // Build the guessing word and clear it out
+//   for (var i = 0; i < champWords[currentWordIndex].length; i++) {
+//     guessingWord.push("_");
+//   }
+//   // Hide game over, win text, and to continue
+//   document.querySelector(".continue").innerHTML = " ";
+//   document.querySelector(".gameover").innerHTML = " Fly!! Eagles";
 // }

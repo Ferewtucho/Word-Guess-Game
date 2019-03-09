@@ -1,100 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hang Man</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Monoton"
-      rel="stylesheet"
-    />
-    <script src="assets/javascript/game.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
   </head>
-
   <body>
-    <div class="container">
-      <h2>
-        <i class="fas fa-football-ball fa-lg" style="color: #8a5029"></i>
-        NFL-Hang-Man
-      </h2>
-      <hr />
-      <div class="row">
-        <div
-          class="col-md-5 top myelement"
-          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
-        >
-          <h3 class="center" style="border-bottom: 1px solid black ">
-            How to play
-          </h3>
-          <p>
-            Press any key to start the game. Once the game starts the computer
-            chooses a random word that you have to guess it by choosing letters.
-          </p>
-          <p>
-            The word to guess is represented by a row of underscores,
-            representing each letter of the word.
-          </p>
-
-          <p>To guess a letter you can press the key on your keyboard.</p>
-
-          <p>
-            If you choose a letter which occurs in the word, the letter appears
-            in all its correct positions and you wil win++. If the chosen letter
-            does not occur in the word, you loss a live.
-          </p>
-          <p>
-            When you loss all the lives, the game is over and you can try again.
-          </p>
+    <section class="main">
+        <div class = "main__header">
+        <h1 class = "main__header--text">NFL HANGMAN GAME</h1>
         </div>
-        <div class="col-md-1"></div>
-        <div
-          class="col-md-5 gameplay-column center top1 top myelement"
-          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
-        >
-          <div class="right">
-            <span>Wins</span> : <span id="totalWins"> </span> ||
-            <span>Losses</span> : <span id="totallosses"> </span> ||
-            <span
-              ><i
-                class="fas fa-heartbeat fa-lg pulsate"
-                style="color: #494525"
-              ></i>
-              : </span
-            ><span id="remainingGuesses"> </span>
-            <hr />
+      <div class="main__box">
+        <div class="main__box--display">
+          <div class="main__player">
+            <h1 class="main__player--text gameover">
+              Fly!! Eagles
+            </h1>
           </div>
-          <hr />
-          <p id="youwin" class="pulsate2"></p>
-          <p id="gameover" class="pulsate2" style="color: red !important"></p>
+          <img
+            src="assets/img/hangman-0.png"
+            alt="han-gman"
+            class="main__box--image image"
+          />
+        </div>
 
-          <hr />
-          <h4>Current Word</h4>
+        <div class="main__box--game">
+          <div class="main__count">
+            <ul class="main__count--style">
+              <li >Win : <span class = "win">0</span></li>
+              <li >Loose : <span class = "loose">0</span></li>
+              <li >Lives : <span class = "lives">0</span></li>
+            </ul>
+          </div>
+          <div class="main__gamer">
+            <h1 class="main__gamer--guess currentWord">
 
-          <h4 id="currentWord"></h4>
-          <br />
-          <h4>Letters Guessed</h4>
-          <hr />
-          <h3 id="guessedLetters"></h3>
-          <hr />
-          <h5 id="continue" class="pulsate2"></h5>
+                _________
+            </h1>
+
+            <br>
+
+            <h1 class="main__gamer--continue continue">
+                    <!-- Press any key to continue!! -->
+          </div>
+
+          <div class="main__guessed">
+            <p class="main__guessed--letter guessedLetters"></p>
+          </div>
+          
         </div>
       </div>
-    </div>
 
-    <script type="text/javascript">
-      // updateDisplay();
-      resetGame();
-    </script>
+      <button class="button button__new">New game</button>
+    </section>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

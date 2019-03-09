@@ -1,0 +1,37 @@
+.button {
+  background-color: #eb4d4d;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  width: 20rem;
+  top: 55rem;
+  left: 50%;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  transform: translateX(-50%);
+  transition: all .2s ease-in;
+
+  &:hover {
+    color: rgb(29, 28, 28);
+    font-weight: 600;
+    background-color: #f09292;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// button:hover {
+//   font-weight: 600;
+// }
+// button:hover i {
+//   margin-right: 20px;
+// }
+
+// button:focus {
+//   outline: none;
+// }
