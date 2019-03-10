@@ -1,9 +1,12 @@
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
   line-height: 1.7;
   color: $color-main-grey-dark;
   padding: 0 0.5rem;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #555;
 }
 
 .main {
@@ -59,11 +62,17 @@ body {
 
   &__count {
     text-align: right;
+    padding-left: 37rem;
 
     &--style {
+      background-color: rgba(4, 106, 56, 1);
+      box-shadow: 0 1rem 1.5rem rgba(black, 0.8);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      width: 100%;
       font-size: 2rem;
       list-style: none;
-      color: #522323;
+      color: #f3f3f3;
       font-weight: 300;
     }
   }
