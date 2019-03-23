@@ -35,7 +35,9 @@ body {
     &--text {
       letter-spacing: 0.6rem;
       font-weight: 100;
-      color: #fff;
+      background-image: linear-gradient(to right bottom, green, yellow, red);
+      -webkit-background-clip: text;
+      color: transparent;
 
       text-transform: uppercase;
     }
