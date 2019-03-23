@@ -38,6 +38,7 @@
 
     &--game {
       float: right;
+      overflow: hidden;
       background-image: linear-gradient(
         to right bottom,
         rgba(4, 106, 57, 0.459),
